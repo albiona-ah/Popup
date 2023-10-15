@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Popup from "./Components/Popup";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [buttonPopup, setButtonPopup] = useState(false);
+  const [timedPopup, setTimedPopup] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setTimedPopup(true);
+    }, 3000);
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+        <div className="content-button-popup">
+          <p className="theme-color">Theme Color</p>
+          <p className="change-theme">Change Theme</p>
+        </div>
+      </Popup>
     </div>
   );
 }
