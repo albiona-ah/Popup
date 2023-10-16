@@ -1,9 +1,6 @@
-
-.App{
+.App {
   text-align: end;
   padding: 40px;
-
-  
 }
 .popup {
   position: fixed;
@@ -12,7 +9,7 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,80 +17,75 @@
 
 .popup-inner {
   position: relative;
-    width: 100%;
-    max-width: 640px;
-    background-color: #fff;
-    padding: 30px
+  width: 100%;
+  max-width: 640px;
+  background-color: #fff;
+  padding: 30px;
 }
 .popup-inner .close-btn {
   position: absolute;
   top: 16px;
   right: 16px;
 }
-.btn-show-popup{
-width: 150px;
-    height: 45px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;}
+.btn-show-popup {
+  width: 150px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
 
-
-    .content-button-popup{
-      display: flex;
-    justify-content: space-between;
-    text-align: center;
-    font-size: 15px
-    
-    }
-.color-input-container{
+.content-button-popup {
   display: flex;
-    gap: 10px;
-
+  justify-content: space-between;
+  text-align: center;
+  font-size: 15px;
 }
-    .button-popup-inner{
-      text-align: end;
-    }
-    .cancel-btn{
-      width: 90px;
-      height: 35px;
-      margin-right: 11px;
-      background: white;
-      border: 1px solid #d5d1d1;
-      border-radius: 5px;
-      margin-top: 30px;
-      color: #676565;
-    }
-    .save-btn{
-      width: 90px;
-      height: 35px;
-      margin-right: 11px;
-      background: #2072EF;
-      border: 1px solid #d5d1d1;
-      border-radius: 5px;
-      color: white;
-    }
-    .change-theme{
-      color: blue;
-    font-weight: bold;
-    font-size: 13px;
+.color-input-container {
+  display: flex;
+  gap: 10px;
 }
-    .theme-color{
-      font-weight: bold;
-      font-size: 16px;
-    }
-  
+.button-popup-inner {
+  text-align: end;
+}
+.cancel-btn {
+  width: 90px;
+  height: 35px;
+  margin-right: 11px;
+  background: white;
+  border: 1px solid #d5d1d1;
+  border-radius: 5px;
+  margin-top: 30px;
+  color: #676565;
+}
+.save-btn {
+  width: 90px;
+  height: 35px;
+  margin-right: 11px;
+  background: #2072ef;
+  border: 1px solid #d5d1d1;
+  border-radius: 5px;
+  color: white;
+}
+.change-theme {
+  color: blue;
+  font-weight: bold;
+  font-size: 13px;
+}
+.theme-color {
+  font-weight: bold;
+  font-size: 16px;
+}
 
-    /* Modal*/
+/* Modal*/
 
-
-    .color{
-      display: flex;
-      text-align: center;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid #afafaf;
-      color: #676565;
-      font-weight: bold;
-  
-    }
+.color {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #afafaf;
+  color: #676565;
+  font-weight: bold;
+}
